@@ -1,0 +1,392 @@
+ .bg-image {
+    background-image: url('sundaa.png'); 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 100vh; 
+    position: relative;
+}
+
+.bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(8px); 
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1.5rem;
+}
+
+main .content .content-image{
+    flex: 1;
+    display: flex;
+}
+
+main .content .content-image img{
+    margin: auto;
+    min-block-size: 250px;
+    width: 350px;
+}
+
+.content-image-about img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-left: 20px;
+    transform: translateY(-25px);
+}
+
+.about-tittle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-left: 20px;
+    transform: translateY(-25px);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-tittle h2{
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+    margin-top: -20px;
+    font-size: 45px;
+    color: #2d3e50;
+}
+
+.about-container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 50px;
+    transform: translateY(-25px);
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; 
+    padding: 50px; 
+}
+
+.dukuh-img img {
+    width: 100%;
+    max-width: 350px; 
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.sejarah-tittle {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.sejarah-tittle h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: left;
+    color: #2d3e50;
+    margin-bottom: 20px; 
+}
+
+.gallery .box-gallery {
+    display: flex;
+    justify-content: space-between; 
+    gap: 30px; 
+}
+
+.gallery .gallery-item {
+    text-align: center; 
+}
+
+.gallery .box-gallery img {
+    width: 350px;
+    object-fit: cover; 
+    border-radius: 10%; 
+}
+
+.gallery-item p {
+    margin-top: 10px; 
+    color: #333; 
+    font-weight: 500;
+}
+
+.text-header{
+    text-align: center;
+    font-weight: 500;
+    font-size: 37px;
+    color: #2d3e50;
+}
+
+.card-title {
+    text-align: center;              
+    margin-bottom: 40px;             
+}
+
+.card-title h2 {
+    font-size: 37px;                 
+    font-weight: 600;                
+    color: #2d3e50;                    
+}
+
+.card-container {
+    display: flex;                   
+    justify-content: space-between;   
+    gap: 10px;                        
+    flex-wrap: wrap;                  
+    margin: 0 auto;                   
+    max-width: 1050px;                
+}
+
+.card {
+    width: 25%;                        
+    background-color: #d3d6db;      
+    padding: 15px;                     
+    border-radius: 8px;                
+    text-align: center;                
+}
+
+.card h3 {
+    font-size: 22px;                   
+    font-weight: 600;                  
+    color: black;                       
+    margin-bottom: 15px;               
+}
+
+.card p {
+    font-size: 16px;                   
+    color: black;                       
+    font-weight: 400;                  
+}
+
+.header-container {
+    text-align: center;              
+    margin-top: 20px;                
+}
+
+.header-container h3 {
+    font-size: 37px;                 
+    font-weight: 600;                
+    color: #2d3e50;                     
+}
+
+.image-section {
+    float: left;                     
+    width: 35%;                      
+    margin-right: 20px;              
+}
+
+.image-section img {
+    width: 95%;                     
+    height: auto;                    
+}
+
+.paragraf-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 55%;
+    gap: 60px;
+}
+
+.rules .beliefs {
+    width: 55%;                      
+    margin-right: 50px;               
+}
+
+.rules ul li{
+     font-weight:400;
+     color: black;
+}
+
+.beliefs ul li{
+    font-weight:400;
+     color: black;
+}
+
+.beliefs {
+    margin-right: 0;                  
+}
+
+.paragraf-section h4 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 35px;
+    margin-top: -10px;
+}
+
+.paragraf-section ul {
+    padding-left: 0;
+    margin-top: 10px;                   
+    margin-top: -10px;
+}
+
+.paragraf-section li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.fakta-unik{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.kiri, .kanan {
+    width: 40%;
+    background-color: #d3d6db;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.kiri h1, .kanan h1 {
+    padding: 20px;
+    text-align: center;
+    color: #2d3e50;
+    font-size: 37px;
+    margin-top: -20px;
+}
+
+.kiri ul li, .kanan p{
+    color: black;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.kanan iframe {
+    width: 80%; 
+    height: 80%; 
+    aspect-ratio: 4 / 3; 
+    margin-top: -25px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: whitesmoke;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer p{
+    color: black;
+} 
+
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .dukuh-img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sejarah-tittle {
+        font-size: 16px;
+    }
+
+    .gallery .box-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery .gallery-item {
+        margin-bottom: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .paragraf-section {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .rules, .beliefs {
+        width: 100%;
+    }
+
+    .fakta-unik {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .kiri, .kanan {
+        width: 100%;
+    }
+
+    .kanan iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

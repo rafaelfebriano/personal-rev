@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator aritmatika geometri</title>
+    <link rel="stylesheet" href="kalkulatorbardet.css">
+</head>
+<body>
+    <div class="calculator">
+        <!--aritmatika -->
+        <div class="section">
+            <h2>Deret Aritmatika</h2>
+            <input type="number" id="firstTerm" placeholder="Suku pertama (a)" class="input-field">
+            <input type="number" id="commonDifference" placeholder="Beda (d)" class="input-field">
+            <input type="number" id="numberOfTerms" placeholder="Jumlah suku (n)" class="input-field">
+            
+            <div class="buttons">
+                <button class="button" onclick="calculateSum()">Hitung Jumlah Deret</button>
+                <button class="button" onclick="calculateNthTerm()">Hitung Suku ke-n</button>
+            </div>
+            
+            <h3>Hasil:</h3>
+            <div id="result-arithmetic" class="result">Hitung</div>
+        </div>
+
+        <!--geometri -->
+        <div class="section">
+            <h2>Deret Geometri</h2>
+            <input type="number" id="firstTermGeo" placeholder="Suku pertama (a)" class="input-field">
+            <input type="number" id="commonRatio" placeholder="Rasio (r)" class="input-field">
+            <input type="number" id="numberOfTermsGeo" placeholder="Jumlah suku (n)" class="input-field">
+            
+            <div class="buttons">
+                <button class="button" onclick="calculateSumGeo()">Hitung Jumlah Deret</button>
+                <button class="button" onclick="calculateNthTermGeo()">Hitung Suku ke-n</button>
+            </div>
+            
+            <h3>Hasil:</h3>
+            <div id="result-geo" class="result">Hitung </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

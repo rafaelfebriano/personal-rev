@@ -1,0 +1,108 @@
+#Education{
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.headersklills h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3e50;
+    margin-bottom: 40px;
+}
+
+.education-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.education-box{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: calc(30% - 30px);
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-info h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-info p{
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.education-box:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+/*responsif education*/
+@media (max-width: 1024px){
+    .education-container {
+        gap: 20px;
+    }
+
+    .education-box {
+        width: calc(50% - 20px);
+    }
+
+    .headersklills h1{
+        font-size: 2.2rem;
+    }
+
+    .education-info h3{
+        font-size: 1.6rem;
+    }
+
+    .education-info p{
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px){
+    .education-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .education-box {
+        width: 100%;
+    }
+
+    .headersklills h1{
+        font-size: 1.8rem;
+    }
+
+    .education-info h3{
+        font-size: 1.4rem;
+    }
+
+    .education-info p{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px){
+    .headersklills h1{
+        font-size: 1.6rem;
+    }
+
+    .education-info h3{
+        font-size: 1.3rem;
+    }
+
+    .education-info p{
+        font-size: 0.85rem;
+    }
+}
